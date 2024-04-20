@@ -16,7 +16,7 @@ body{
 }
 .menu{
     background-color: #123;
-    width: 50px;
+    width: 60px;
     height: 100vh;
     padding: 20px;
     overflow: hidden;
@@ -24,7 +24,7 @@ body{
     transition: .5s;
 }
 .menu:hover{
-    width: 260px;
+    width: 280px;
 }
 .profile{
     display: flex;
@@ -63,8 +63,11 @@ ul li a{
     gap: 40px;
     transition: .5s;
 }
-ul li a:hover, .active, .data-info .box:hover, td:hover{
-    background-color: #ffffff55;
+ul li a:hover, .active{
+    background-color: #224466;
+}
+.data-info .box:hover, td:hover, th:hover, .title-info:hover{
+    background-color: #001;
 }
 .log-out{
     position: absolute;
@@ -89,6 +92,7 @@ ul li a i{
     justify-content: space-between;
     border-radius: 8px;
     margin: 10px 0;
+    transition: .5s;
 }
 .data-info{
     display: flex;
@@ -106,9 +110,10 @@ ul li a i{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transition: .5s;
 }
 .data-info .box i{
-    font-style: 40px;
+    font-size: 40px;
 }
 .data-info .box .data{
     text-align: center;
@@ -125,9 +130,11 @@ td, th{
     background-color: #123;
     height: 40px;
     border-radius: 8px;
+    transition: .5s;
 }
 th{
     background-color: #0080ff;
+    transition: .5s;
 }
 .price, .count{
     padding: 6px;
